@@ -1,0 +1,17 @@
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <title>SIGN UP FORM</title>
+    <body>
+       <h1>SIGN UP FORM </h1>
+       <form method ='post'>
+          {% csrf_token %}
+          {{form.as_p}}
+          <input type = "Submit" value ='SIGN UP'>
+          <input type = "Reset" value = 'Reset'>
+       </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>delete page</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+            <h1>Confirmation Page</h1>
+            <h2>Do you really want to delete?</h2>
+            <form method ='post'>
+              {% csrf_token %}
+                <input type="submit" class="btn btn-success" value="Yes">
+                <a href="{% url 'display_url' %}"><button type='button' class="btn btn-warning">No</button></a>
+            
+            </form>
+    </body>
+</html>

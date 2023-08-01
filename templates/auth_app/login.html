@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+<html>
+    <head>
+      
+
+        {% block title %}
+           <title>LOGIN FORM</title>
+        {% endblock %}
+        
+    </head>
+    <body>
+       
+    
+    {% block content %}
+    <h1> LOGIN FORM </h1>
+    <form method ='post'>
+        {% csrf_token %}
+        <input placeholder="USERNAME" name="un">
+        <br><br>
+        <input placeholder="PASSWORD" name="pw">
+        <br><br>
+        <input type = "Submit" value ='LOGIN'>
+        <input type = "Reset" value = 'Reset'>
+    </form>
+    {% endblock %}
+    
+    </body>
+</html>
